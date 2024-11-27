@@ -11,24 +11,34 @@
       <p><a href="tel:0606060606" >0606060606</a></p>
   </div> 
 
-<menu class="Projets">
+  <menu class="Projets">
     <h3>Mes projets:</h3>
-    <li><a href="#MonCvEnLigne">Mon CV en ligne</a></li>
-    <li><a href="#CahierDesCharges">Cahier des charges</a></li>
-    <li><a href="#DynamiserUnEspaceCommentaires">Dynamiser un espace commentaires</a></li>
-    <li><a href="#MaPage404">Ma page 404</a></li>
+    <p><a href="https://github.com/pinknat/CV.git">Mon CV en ligne</a></p>
+    <p><a href="../documents/CAHIER DES CHARGES-1.pdf">Cahier des charges</a></p>
+    <p><a href="https://github.com/pinknat/DynamiserUnEspaceCommentaire.git">Dynamiser un espace commentaires</a></p>
+    <p><a href="./pages/404.html">Ma page 404</a></p>
   </menu>  
-
-  <div class="btn"> <img src="https://fontawesome.com/icons/square-caret-up?f=classic&s=solid" alt=""></div>
 
 </template> 
 
 <script>
-
+const btn=document.querySelector('.btn');
+btn.addEventListener('click',() => {
+  window.scrollTo({
+    top:0,
+    left:0,
+    behavior: "smooth"
+  })
+})
 
 </script>
 
 <style>
+
+.header {
+  background-color: grey;
+}
+
 h1 {
   display:flex;
   justify-content:space-around;      
@@ -44,12 +54,12 @@ h2 {
 .address{
     display:flex;
     align-items: center;
-    justify-content:space-around;      
-    grid-area: address;  
+    justify-content:space-around;
+    background-color: black;      
 }
 
 .address a{
-    color:black;
+    color:white;
     text-decoration: none;
 }
 
@@ -62,13 +72,35 @@ h2 {
 }
 
 .footer{
+    display: block;
     background-color: black;
     color:#ffffff;
     text-align: center;
     padding: 20px;
-    grid-area: footer;
   
 }
 
+.btn{
+  height:100px;
+  width: 100px;
+  position:fixed;
+  right:20px;
+  bottom:20px;
+  cursor: pointer;
+}
+
+body{
+  margin:0;
+  padding:0;
+  font-family:"montserrat",sans serif;
+}
+
+.container{
+  width:100%;
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  text-align:center;
+}
 
 </style>
