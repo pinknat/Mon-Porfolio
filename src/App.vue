@@ -16,7 +16,7 @@
     <p><a href="https://github.com/pinknat/CV.git">Mon CV en ligne</a></p>
     <p><a href="../documents/CAHIER DES CHARGES-1.pdf">Cahier des charges</a></p>
     <p><a href="https://github.com/pinknat/DynamiserUnEspaceCommentaire.git">Dynamiser un espace commentaires</a></p>
-    <p><a href="./pages/404.html">Ma page 404</a></p>
+    <p><a href="./pages/404.html">Page 404</a></p>
   </menu>  
 
 </template> 
